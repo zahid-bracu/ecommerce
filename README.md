@@ -1,9 +1,6 @@
 # E-commerce Website
 ## Tools 
 
-# E-commerce Website
-## Tools 
-
 HTML <br />
 CSS <br />
 React <br />
