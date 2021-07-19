@@ -2,6 +2,12 @@ import React from 'react';
 import './style.css';
 import ebay from '../../resource/navbar/rokomari_logo.png';
 import { Button, Nav, NavDropdown, Form, FormControl, Navbar } from 'react-bootstrap';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './style.css'
 
 
@@ -9,7 +15,7 @@ export default function NavbarMain() {
         
     return (
       <>
-       <Navbar bg="dark" className="fixed-top" expand="lg">
+       <Navbar bg="dark" className="sticky-top" expand="lg">
       <div className="container">
       <Navbar.Brand href="#">
         <img src={ebay} alt="ebay" className="nav-logo" />
@@ -21,10 +27,13 @@ export default function NavbarMain() {
            
       
         >
-          <Nav.Link className="custom-nav" href="#action1">Home</Nav.Link>
-          <Nav.Link className="custom-nav" href="#action2">Shop</Nav.Link>
-          <Nav.Link className="custom-nav" href="#action3">Contact</Nav.Link>
-          <Nav.Link className="custom-nav" href="#action4">Github</Nav.Link>
+          <Nav.Link  >
+            <Link className="custom-nav"  to="/">Home</Link>
+            
+            </Nav.Link>
+          <Nav.Link className="custom-nav"  >Shop</Nav.Link>
+          <Nav.Link className="custom-nav"  >Contact</Nav.Link>
+          <Nav.Link className="custom-nav" >Github</Nav.Link>
 
         </Nav>
 
@@ -51,7 +60,9 @@ export default function NavbarMain() {
         
            
         >
-          <Button className="mr-2 my-1" variant="secondary">Login</Button> 
+         <Link to="/login">
+         <Button className="mr-2 my-1" variant="secondary">Login</Button> 
+           </Link> 
           <Button className="mr-2 my-1" variant="success">Sign up</Button> 
 
         </Nav>

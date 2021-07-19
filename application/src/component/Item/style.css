@@ -1,0 +1,19 @@
+.card-img{
+    width:90% !important;
+    margin:1em auto !important;
+}
+
+
+.card-custom{
+    width:95%;
+    max-width: 220px;
+    height: min-content;
+
+    margin-bottom: .3em;
+    
+}
+
+
+.checked {
+    color: #DAA520;
+  }
