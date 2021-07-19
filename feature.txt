@@ -1,0 +1,21 @@
+1. sell statistics & chart in admin dashboard
+2. manage product - to create & update product to upload images
+3. manage order & set order as a deliver in admin dashboard
+4. manage users / find rules for user seller & customer etc
+5. online supports of your customer
+6. online chat with admin
+7. handle password and reset password
+8. send email for creating paying and delivering order
+to customer
+9. choose shipping address to locate the customer address
+10. stripe
+
+google map api to show address on map and screen
+socket.io to chat
+mongodb transaction
+advance mongodb query for product search & category filter
+mailgun API to send email for order recieve, forget password & 
+reset password
+stripe 
+google  charts 
+publish website on aws

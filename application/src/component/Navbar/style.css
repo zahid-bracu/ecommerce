@@ -1,0 +1,19 @@
+
+
+.custom-nav{
+    font-weight: 600 !important;
+    color: rgb(231, 231, 231) !important;
+}
+
+.mr-2{
+    margin-right: .4rem !important;
+}
+
+.ml-2{
+    margin-left: .5rem !important;
+}
+
+.nav-logo{
+    width:95%;
+    max-width: 100px;
+}
