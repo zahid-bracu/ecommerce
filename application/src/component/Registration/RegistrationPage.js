@@ -7,12 +7,18 @@ import {
     Link
   } from "react-router-dom";
 import './style.css';
-export default function LoginPage() {
+export default function RegistrationPage() {
     return (
         <div className="container">
             <div className="form-custom my-5">
             <Form >
-            <h6>Login Page</h6>
+            <h6>Registration Page</h6>
+                
+                <Form.Group className="mb-3" controlId="formName">
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control type="text" placeholder="Enter Name" />
+                </Form.Group>
+                
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" />
@@ -25,6 +31,11 @@ export default function LoginPage() {
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" />
                 </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicConfirmPassword">
+                    <Form.Label>Confirm Password</Form.Label>
+                    <Form.Control type="password" placeholder="Confirm Password" />
+                </Form.Group>
                  
                 <button className="form-button btn btn-success" type="submit">
                     Login
@@ -32,7 +43,7 @@ export default function LoginPage() {
                 
             </Form>
 
-            <p className="my-3 ">New customer? <Link className="my-3 text-decoration-none" to="/registration">Create your account</Link> </p>
+            <p className="my-3 ">Already have an account? <Link className="my-3 text-decoration-none" to="/login">Login here</Link> </p>
             </div>
              
             

@@ -13,6 +13,8 @@ import {
   Link
 } from "react-router-dom";
 import LoginPage from './component/Login/LoginPage';
+import RegistrationPage from './component/Registration/RegistrationPage';
+import ShopPage from './component/Shop/ShopPage';
 
 
 function App() {
@@ -30,6 +32,14 @@ function App() {
 
           <Route path="/login">
             <LoginPage/>
+          </Route>
+
+          <Route path="/registration">
+            <RegistrationPage/>
+          </Route>
+
+          <Route path="/shop">
+            <ShopPage/>
           </Route>
 
           <Route path="/">

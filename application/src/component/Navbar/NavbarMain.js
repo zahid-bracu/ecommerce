@@ -31,7 +31,12 @@ export default function NavbarMain() {
             <Link className="custom-nav"  to="/">Home</Link>
             
             </Nav.Link>
-          <Nav.Link className="custom-nav"  >Shop</Nav.Link>
+
+            <Nav.Link  >
+            <Link className="custom-nav"  to="/shop">Shop</Link>
+            
+            </Nav.Link>
+          
           <Nav.Link className="custom-nav"  >Contact</Nav.Link>
           <Nav.Link className="custom-nav" >Github</Nav.Link>
 
@@ -63,7 +68,10 @@ export default function NavbarMain() {
          <Link to="/login">
          <Button className="mr-2 my-1" variant="secondary">Login</Button> 
            </Link> 
-          <Button className="mr-2 my-1" variant="success">Sign up</Button> 
+
+
+           <Link to="/registration"><Button className="mr-2 my-1" variant="success">Sign up</Button> </Link>
+          
 
         </Nav>
 
