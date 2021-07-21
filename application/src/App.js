@@ -15,6 +15,7 @@ import {
 import LoginPage from './component/Login/LoginPage';
 import RegistrationPage from './component/Registration/RegistrationPage';
 import ShopPage from './component/Shop/ShopPage';
+import ViewDetails from './component/ViewDetails/ViewDetails';
 
 
 function App() {
@@ -40,6 +41,10 @@ function App() {
 
           <Route path="/shop">
             <ShopPage/>
+          </Route>
+
+          <Route path="/viewdetails">
+            <ViewDetails/>
           </Route>
 
           <Route path="/">
