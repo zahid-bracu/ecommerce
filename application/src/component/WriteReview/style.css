@@ -1,0 +1,9 @@
+.custom-form{
+    width: 95%;
+    max-width: 500px !important;
+    margin: auto
+}
+
+.btn-custom{
+    width: 100% !important;
+}

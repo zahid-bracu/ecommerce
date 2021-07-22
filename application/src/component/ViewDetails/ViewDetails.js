@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import makeid from './Name';
+import WriteReview from '../WriteReview/WriteReview';
 export default function ViewDetails() {
     const name=makeid(5);
     return (
@@ -24,6 +25,8 @@ export default function ViewDetails() {
               <button className="btn btn-success btn-sm px-4">Add</button>
               </div>
         </div>  
+
+        <WriteReview/>
         </div>
         </>
     )

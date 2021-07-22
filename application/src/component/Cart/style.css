@@ -1,0 +1,22 @@
+.cart-item{
+    /* border-bottom: 1px solid rgb(67, 173, 67); */
+    width: 95%;
+    max-width: 950px;
+    padding: 1rem 0rem;
+}
+
+.cart-image{
+    margin:0px auto;
+    width: 100%;
+    max-width: 290px !important;
+}
+
+.cart-info{
+    max-width:920px !important; 
+    /* background-color: burlywood; */
+}
+
+.cart-info-table{
+    /* background-color: greenyellow; */
+    max-width: 150px;
+}

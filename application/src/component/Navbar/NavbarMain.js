@@ -37,9 +37,7 @@ export default function NavbarMain() {
             
             </Nav.Link>
           
-          <Nav.Link className="custom-nav"  >Contact</Nav.Link>
-          <Nav.Link className="custom-nav" >Github</Nav.Link>
-
+           
         </Nav>
 
 
@@ -62,9 +60,12 @@ export default function NavbarMain() {
 
         <Nav
           className="mx-auto  my-lg-0"
-        
-           
         >
+
+           <Nav.Link  >
+            <Link className="custom-nav"  to="/cart">Cart</Link>
+            </Nav.Link>
+
          <Link to="/login">
          <Button className="mr-2 my-1" variant="secondary">Login</Button> 
            </Link> 
