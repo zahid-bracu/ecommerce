@@ -1,8 +1,12 @@
 import React, {useState} from 'react';
 import { Button,  Form } from 'react-bootstrap';
+import {
+    Link,useHistory
+  } from "react-router-dom";
 import './style.css';
 
 const ShippingAddress = () => {
+    let history = useHistory();
  const [info,setInfo]=useState({
   name:"",
   email:"",
@@ -19,6 +23,7 @@ const ShippingAddress = () => {
 
  const submitFunc=(e)=>{
   e.preventDefault();
+  history.push("/payment");
   console.log(info)
  }
  
