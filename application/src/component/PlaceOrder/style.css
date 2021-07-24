@@ -1,0 +1,30 @@
+.payment{
+    background-color: #F8F8F8;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+
+.method{
+    background-color: #F8F8F8;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.billing-info{
+    background-color: #F8F8F8;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.font-bold{
+    font-weight: 600;
+}
+
+
+.btn-custom{
+    width: 100%  ;
+}
