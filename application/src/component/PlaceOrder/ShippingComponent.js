@@ -7,6 +7,7 @@ export default function ShippingComponent() {
             <p>
             <span  className="font-bold">Address: </span> Flat No. - 1906, Bhaban No. - 02, A.G.B Colony (Hospital Zone), Motijheel, Motijheel Dilkusha,1223, Bangladesh
             </p>
+            <div className="alert alert-danger">Not Delivered</div>
         </div>
     )
 }
