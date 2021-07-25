@@ -2,29 +2,29 @@ import React, {useState, useEffect} from 'react'
 import { connect } from 'react-redux';
 import {productList} from '../../redux/action/productsAction';
 import ItemCard from '../Item/ItemCard';
-import { Button, Nav, NavDropdown, Form, FormControl, Navbar } from 'react-bootstrap';
 import './style.css';
 const ShopPage=React.memo(function({productList, product, loading, error}) {
-  const [data,setData]=useState(product);
+  const [data,setData]=useState([]);
 
   useEffect(() => {
     productList();
-    
+    setData(product);
  },[]);
 
-//  console.log(product);
+ 
+ 
 
  const filterProductFunc=(event)=>{
-   console.log(event.target.value);
    const value=event.target.value;
    if(value==='all'){
      setData(product)
    }else{
     const tempData=product.filter(key=> key.category===value);
-    console.log(tempData);
     setData(tempData);
    }
  }
+
+ console.log(data);
     return (
         <>
         <div>
@@ -55,6 +55,10 @@ const ShopPage=React.memo(function({productList, product, loading, error}) {
                   }
                 })
             }
+
+            {
+              
+            }
           </div>
           </div>
         </>
@@ -68,4 +72,4 @@ const mapStateToProps=(state)=>({
   error:state.productReducer.error
 })
 
-export default connect(mapStateToProps,{productList})(ShopPage);
+export default React.memo(connect(mapStateToProps,{productList})(ShopPage));

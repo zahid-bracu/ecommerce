@@ -20,6 +20,8 @@ import CartPage from './component/Cart/CartPage';
 import ShippingAddress from './component/Shipping/ShippingAddress';
 import PaymentPage from './component/Payment/PaymentPage';
 import PlaceOrder from './component/PlaceOrder/PlaceOrder';
+import EditProfilePage from './component/Profile/EditProfile/EditProfilePage';
+import OrderDetailPage from './component/OrderDetail/OrderDetailPage';
 
 
 function App() {
@@ -66,6 +68,15 @@ function App() {
 
           <Route path="/placeorder">
             <PlaceOrder/>
+          </Route>
+
+          <Route path="/editprofile">
+            <EditProfilePage/>
+          </Route>
+
+
+          <Route path="/orderdetail">
+            <OrderDetailPage/>
           </Route>
 
           <Route path="/">
