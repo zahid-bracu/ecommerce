@@ -77,6 +77,49 @@ export default function NavbarMain() {
         </Nav>
 
 
+        {/* <NavDropdown title="Md. Zahidur Rahman" className="nav-drop-title" >
+          
+          <NavDropdown.Item  >
+          <Link className="custom-nav-drop" to="editprofile">
+          Profile
+          </Link>
+          </NavDropdown.Item>
+        
+        
+          <NavDropdown.Item  >
+          <Link className="custom-nav-drop" to="orderdetail">
+          Order History
+          </Link>
+          </NavDropdown.Item>
+
+
+          <NavDropdown.Item  >
+          <Link className="custom-nav-drop"  >
+          Sign Out
+          </Link>
+          </NavDropdown.Item>
+         
+      </NavDropdown> */}
+
+
+      <Nav>
+
+      <div class="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Md. Zahidur Rahman
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+         <Link to="editprofile" className="custom-nav-drop">
+         <a class="dropdown-item"  >Action</a>
+         </Link> 
+          <a class="dropdown-item"  >Another action</a>
+          <a class="dropdown-item"  >Something else here</a>
+        </div>
+      </div>
+      </Nav>
+      
+
+
 
 
       </Navbar.Collapse>

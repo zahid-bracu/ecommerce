@@ -6,6 +6,17 @@
     text-decoration: none !important;
 }
 
+.custom-nav-drop{
+    font-weight: 600 !important;
+    color: rgb(54, 54, 54) !important;
+    text-decoration: none !important;
+}
+
+ .custom-nav-drop.active{
+    background-color: burlywood !important;
+    color: brown !important;
+}
+
 .mr-2{
     margin-right: .4rem !important;
 }
@@ -18,3 +29,6 @@
     width:95%;
     max-width: 100px;
 }
+
+ 
+ 
