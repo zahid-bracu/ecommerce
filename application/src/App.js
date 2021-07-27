@@ -26,7 +26,8 @@ import OrderDetailPage from './component/OrderDetail/OrderDetailPage';
 
 function App() {
   return (
-    <div>
+    <>
+    <div className="">
 
     
     
@@ -86,8 +87,10 @@ function App() {
 
         </Switch>
     </Router>
-    <Footer/>
+    
     </div>
+    <Footer/>
+    </>
   );
 }
 
