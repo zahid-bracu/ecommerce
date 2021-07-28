@@ -1,8 +1,14 @@
 import React from 'react'
 import bannerOne from '../../resource/banner/bannerOne.jpg'
 import './style.css';
-import Jump from 'react-reveal/Jump';
+ 
 import Bounce from 'react-reveal/Bounce';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 export default function BannerOne() {
     return (
         <div className="container">
@@ -14,7 +20,10 @@ export default function BannerOne() {
                 <h5 className="text-success">Find Your Daily Product Here</h5>
                 
                 <p className="text-justify"> ইবে ইনক. হল একটি আমেরিকান মাল্টিন্যাশনাল কর্পোরেশন এবং ই-কমার্স কোম্পানি, ইন্টারনেটের মাধ্যমে ভোক্তা থেকে ভোক্তা এবং ব্যবসায়ী থেকে ভোক্তাকে বিক্রয় সেবা প্রদান করা হয়ে থাকে। এর প্রধান কার্যালয় স্যান হোসে, ক্যালিফোর্নিয়াতে অবস্থিত।</p>
+                <Link to="shop">
+                <button className="btn btn-success btn-sm px-4">Shop </button></Link>
                 </Bounce>
+
             </div>
 
             <Bounce>

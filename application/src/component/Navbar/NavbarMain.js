@@ -110,10 +110,17 @@ export default function NavbarMain() {
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
          <Link to="editprofile" className="custom-nav-drop">
-         <a class="dropdown-item"  >Action</a>
+         <a class="dropdown-item"  >Profile Information</a>
          </Link> 
-          <a class="dropdown-item"  >Another action</a>
-          <a class="dropdown-item"  >Something else here</a>
+
+         <Link to="orderdetail" className="custom-nav-drop">
+         <a class="dropdown-item"  >Order Details</a>
+         </Link> 
+
+         <Link   className="custom-nav-drop">
+         <a class="dropdown-item"  >Sign out</a>
+         </Link> 
+           
         </div>
       </div>
       </Nav>

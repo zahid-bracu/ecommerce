@@ -15,10 +15,16 @@ const Home=React.memo(function({productList, product, loading, error}) {
      },[]);
   
     return (
-        <div className="d-flex flex-wrap justify-content-center  ">
-           {
-               loading && <img src={imageLink} className="mx-auto" />
+        <>
+        {
+               loading &&<> 
+               
+               <img src={imageLink} alt="Loading" className="mx-auto d-block" />
+               
+               </>
            }
+        <div className="d-flex flex-wrap justify-content-center  ">
+           
            {
                product && product.map((key,index)=>{
                 if(index<=4){
@@ -30,6 +36,7 @@ const Home=React.memo(function({productList, product, loading, error}) {
                })
            }
         </div>
+        </>
     )
 })
 

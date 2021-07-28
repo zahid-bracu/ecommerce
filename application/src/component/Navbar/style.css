@@ -12,11 +12,7 @@
     text-decoration: none !important;
 }
 
- .custom-nav-drop.active{
-    background-color: burlywood !important;
-    color: brown !important;
-}
-
+ 
 .mr-2{
     margin-right: .4rem !important;
 }
@@ -30,5 +26,11 @@
     max-width: 100px;
 }
 
- 
- 
+.dropdown-item{
+    font-weight: 600 !important;
+    
+} 
+
+ .dropdown-item:active{
+     background-color: white !important;
+ }
