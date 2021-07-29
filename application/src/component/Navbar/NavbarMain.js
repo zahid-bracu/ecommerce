@@ -11,11 +11,11 @@ import {
 import './style.css'
 
 
-export default function NavbarMain() {
+export default function NavbarMain({state,changeState}) {
         
     return (
       <>
-       <Navbar bg="dark" className="sticky-top" expand="lg">
+       <Navbar bg="white" className="sticky-top" expand="lg">
       <div className="container">
       <Navbar.Brand href="#">
         <img src={ebay} alt="ebay" className="nav-logo" />
@@ -53,7 +53,7 @@ export default function NavbarMain() {
             className="mr-2"
             aria-label="Search"
           />
-          <Button variant="danger">Search</Button>
+          <button className="btn btn-danger btn-sm" variant="danger">Search</button>
         </Form>
         </Nav>
 
@@ -66,12 +66,15 @@ export default function NavbarMain() {
             <Link className="custom-nav"  to="/cart">Cart</Link>
             </Nav.Link>
 
-         <Link to="/login">
-         <Button className="mr-2 my-1" variant="secondary">Login</Button> 
-           </Link> 
-
-
-           <Link to="/registration"><Button className="mr-2 my-1" variant="success">Sign up</Button> </Link>
+         {
+          //  to="/login"
+           !state && <><Link >
+           <Button onClick={changeState} className="mr-2 my-1 btn-sm" variant="dark">Login</Button> 
+             </Link> 
+  
+  
+             <Link to="/registration"><Button className="mr-2 my-1 btn-sm" variant="primary">Sign up</Button> </Link></>
+         }
           
 
         </Nav>
@@ -105,7 +108,7 @@ export default function NavbarMain() {
       <Nav>
 
       <div class="dropdown">
-        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Md. Zahidur Rahman
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -115,6 +118,11 @@ export default function NavbarMain() {
 
          <Link to="orderdetail" className="custom-nav-drop">
          <a class="dropdown-item"  >Order Details</a>
+         </Link> 
+
+
+         <Link to="/login"  className="custom-nav-drop">
+         <a class="dropdown-item"  >Login</a>
          </Link> 
 
          <Link   className="custom-nav-drop">

@@ -22,7 +22,7 @@ export default function ViewDetails() {
               <h5 className="text-primary font-weight-bold">{name} </h5>
               <p><span className="  font-weight-bold">Price : </span> 120$</p>
               <p><span className="  font-weight-bold">Status : </span> <span className="text-success">Available</span></p>
-              <button className="btn btn-success btn-sm px-4">Add</button>
+              <button className="btn btn-primary btn-sm px-4">Add</button>
               </div>
         </div>  
 

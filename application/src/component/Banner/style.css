@@ -1,5 +1,28 @@
+*{
+    color: rgb(54, 54, 54);
+}
+
 .banner-one-image{
     width: 95%;
     max-width: 500px;
+}
 
+.icon-image{
+    max-width: 100px;
+}
+
+.shopping-image{
+    width: 95%;
+    max-width: 750px;
+}
+
+.shop-card{
+    background-color: rgb(238, 238, 238);
+    padding: 1em;
+    transition: .5s;
+}
+
+.shop-card:hover{
+    transform: scale(1.02);
+    cursor: pointer;
 }

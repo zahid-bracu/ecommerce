@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 import NavbarMain from './component/Navbar/NavbarMain.js';
 import Footer from './component/Footer/Footer';
@@ -22,19 +22,20 @@ import PaymentPage from './component/Payment/PaymentPage';
 import PlaceOrder from './component/PlaceOrder/PlaceOrder';
 import EditProfilePage from './component/Profile/EditProfile/EditProfilePage';
 import OrderDetailPage from './component/OrderDetail/OrderDetailPage';
+import BannerTwo from './component/Banner/BannerTwo';
 
 
 function App() {
+  const [state, setstate] = useState(false);
+  function changeState(){
+    setstate(!state);
+  }
+  console.log(state);
   return (
     <>
     <div className="">
-
-    
-    
-    
-
     <Router>
-    <NavbarMain/>
+    <NavbarMain  changeState={changeState}/>
          <Switch>
           
 
@@ -82,7 +83,9 @@ function App() {
 
           <Route path="/">
             <BannerOne/>
+            <BannerTwo/>
             <Home/>
+            
           </Route>
 
         </Switch>

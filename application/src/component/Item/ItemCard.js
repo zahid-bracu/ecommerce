@@ -1,8 +1,9 @@
 import React from 'react';
 import {
   Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
+  CardTitle, CardSubtitle,
 } from 'reactstrap';
+import { Button } from 'react-bootstrap';
 import mobile from '../../resource/card/mobile.png'
 import {
   BrowserRouter as Router,
@@ -26,7 +27,7 @@ const ItemCard = ({id,title, image, price}) => {
             <i className="fa fa-star-o"></i>
             </CardSubtitle>
           <CardText className="fw-bold">${price}</CardText>
-          <Button className="btn btn-success btn-sm px-3">Add</Button>
+          <Button className="btn btn-sm"  variant="primary">Add</Button>
                  <Link to="viewdetails">
                  <Button className="btn btn-dark text-white btn-sm ml-2 ">View Details</Button>
                  </Link>   
