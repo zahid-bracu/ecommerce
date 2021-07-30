@@ -35,7 +35,7 @@ function App() {
     <>
     <div className="">
     <Router>
-    <NavbarMain  changeState={changeState}/>
+    <NavbarMain state={state}  changeState={changeState}/>
          <Switch>
           
 
