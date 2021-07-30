@@ -2,8 +2,8 @@ import React from 'react'
 import {Table} from 'react-bootstrap';
 export default function TablePage() {
     return (
-        <Table striped bordered hover size="sm">
-        <thead>
+        <Table striped  hover  >
+        <thead class="thead-secondary">
             <tr>
             <th>ID</th>
             <th>DATE</th>

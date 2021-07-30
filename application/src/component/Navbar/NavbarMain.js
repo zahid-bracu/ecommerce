@@ -15,7 +15,7 @@ export default function NavbarMain({state,changeState}) {
         
     return (
       <>
-       <Navbar bg="white" className="sticky-top" expand="lg">
+       <Navbar bg="white" className="sticky-top navbar-custom" expand="lg">
       <div className="container">
       <Navbar.Brand href="#">
         <img src={ebay} alt="ebay" className="nav-logo" />
@@ -36,9 +36,15 @@ export default function NavbarMain({state,changeState}) {
             <Link className="custom-nav"  to="/shop">Shop</Link>
             
             </Nav.Link>
+
+            <Nav.Link  >
+              <Link className="custom-nav"  to="/cart">Cart (8)</Link>
+            </Nav.Link>
           
            
         </Nav>
+
+
 
 
         <Nav
@@ -59,12 +65,10 @@ export default function NavbarMain({state,changeState}) {
 
 
         <Nav
-          className="mx-auto  my-lg-0"
+          className=""
         >
 
-           <Nav.Link  >
-            <Link className="custom-nav"  to="/cart">Cart</Link>
-            </Nav.Link>
+           
 
          {
           //  to="/login"
@@ -79,60 +83,39 @@ export default function NavbarMain({state,changeState}) {
 
         </Nav>
 
-
-        {/* <NavDropdown title="Md. Zahidur Rahman" className="nav-drop-title" >
-          
-          <NavDropdown.Item  >
-          <Link className="custom-nav-drop" to="editprofile">
-          Profile
-          </Link>
-          </NavDropdown.Item>
-        
-        
-          <NavDropdown.Item  >
-          <Link className="custom-nav-drop" to="orderdetail">
-          Order History
-          </Link>
-          </NavDropdown.Item>
+ 
 
 
-          <NavDropdown.Item  >
-          <Link className="custom-nav-drop"  >
-          Sign Out
-          </Link>
-          </NavDropdown.Item>
-         
-      </NavDropdown> */}
+     {
+       state &&   <Nav>
 
-
-      <Nav>
-
-      <div class="dropdown">
-        <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Md. Zahidur Rahman
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-         <Link to="editprofile" className="custom-nav-drop">
-         <a class="dropdown-item"  >Profile Information</a>
-         </Link> 
-
-         <Link to="orderdetail" className="custom-nav-drop">
-         <a class="dropdown-item"  >Order Details</a>
-         </Link> 
-
-
-         <Link to="/login"  className="custom-nav-drop">
-         <a class="dropdown-item"  >Login</a>
-         </Link> 
-
-         <Link   className="custom-nav-drop">
-         <a class="dropdown-item"  >Sign out</a>
-         </Link> 
-           
-        </div>
-      </div>
-      </Nav>
-      
+       <div class="dropdown">
+         <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Md. Zahidur Rahman
+         </button>
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <Link to="editprofile" className="custom-nav-drop">
+          <a class="dropdown-item"  >Profile Information</a>
+          </Link> 
+ 
+          <Link to="orderdetail" className="custom-nav-drop">
+          <a class="dropdown-item"  >Order Details</a>
+          </Link> 
+ 
+ 
+          <Link to="/login"  className="custom-nav-drop">
+          <a class="dropdown-item"  >Login</a>
+          </Link> 
+ 
+          <Link onClick={changeState}   className="custom-nav-drop">
+          <a class="dropdown-item"  >Sign out</a>
+          </Link> 
+            
+         </div>
+       </div>
+       </Nav>
+       
+     }
 
 
 

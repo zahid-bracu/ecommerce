@@ -89,10 +89,11 @@ function App() {
           </Route>
 
         </Switch>
+        <Footer/>
     </Router>
     
     </div>
-    <Footer/>
+    
     </>
   );
 }

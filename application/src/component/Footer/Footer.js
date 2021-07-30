@@ -1,11 +1,46 @@
-import React from 'react'
-import './style.css';
-export default function Footer() {
+import React from 'react';
+import './style.css'
+import ebay from '../../resource/navbar/rokomari_logo.png';
+import { Link } from 'react-router-dom';
+const Footer = () => {
     return (
-        <div className=" bg-dark sticky-bottom">
+        <footer className=" py-3">
+       
             <div className="container">
-                <h6 className="text-center py-2  text-white">All Right Reserves 2021</h6>
+                <div className="row footer-top py-5">
+                    <div className="col-md-6 mb-5">
+                        <img src={ebay} style={{width:"140px"}} alt="Hot Onion White Logo"/>
+                    </div>
+                    <div className="col-md-3">
+                        <ul className="list-unstyled">
+                            <li>< Link  className="link-nav-footer">About Online Service</Link></li>
+                            <li>< Link  className="link-nav-footer">Read Our Blog</Link></li>
+                            <li>< Link  className="link-nav-footer">Sign up to deliver</Link></li>
+                            <li>< Link  className="link-nav-footer">Add your shop</Link></li>
+                        </ul>
+                    </div>
+                    <div className="col-md-3">
+                        <ul className="list-unstyled">
+                            <li>< Link  className="link-nav-footer">Get Help</Link></li>
+                            <li>< Link  className="link-nav-footer">Read FAQ</Link></li>
+                            <li>< Link  className="link-nav-footer">View All Cities</Link></li>
+                            <li>< Link  className="link-nav-footer">Mall near us</Link></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="footer-bottom d-flex justify-content-between align-items-center">
+                    <small className="text-secondary">Copyright &copy;  2020 Online Service </small>
+                    <ul className="list-inline">
+                        <li className="list-inline-item ml-3"><a  >Privacy Policy.</a></li>
+                        <li className="list-inline-item  ml-3"><a  >Terms of Use</a></li>
+                        <li className="list-inline-item  ml-3"><a  >Pricing</a></li>
+                    </ul>
+
+                </div>
             </div>
-        </div>
-    )
-}
+        </footer>
+    );
+};
+
+export default Footer;

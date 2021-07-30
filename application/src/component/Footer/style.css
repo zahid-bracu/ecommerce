@@ -2,3 +2,8 @@
     margin: 0px;
     padding: 0px;  
 }
+
+.link-nav-footer{
+    text-decoration: none !important;
+    color: rgb(53, 53, 53) !important;
+}
