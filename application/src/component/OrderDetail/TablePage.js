@@ -1,5 +1,8 @@
 import React from 'react'
 import {Table} from 'react-bootstrap';
+import {
+    Link
+  } from "react-router-dom";
 export default function TablePage() {
     return (
         <Table striped  hover  >
@@ -18,7 +21,7 @@ export default function TablePage() {
                 <td>09/08/1995</td>
                 <td>120$</td>
                 <td>No</td>
-                <td><button className="btn btn-outline-dark btn-sm">DETAILS</button></td>
+                <td><Link to="placeorder"><button className="btn btn-outline-dark btn-sm">DETAILS</button></Link></td>
             </tr>
 
 
@@ -27,7 +30,7 @@ export default function TablePage() {
                 <td>11/04/1995</td>
                 <td>80$</td>
                 <td>No</td>
-                <td><button className="btn btn-outline-dark btn-sm">DETAILS</button></td>
+                <td><Link to="placeorder"><button className="btn btn-outline-dark btn-sm">DETAILS</button></Link></td>
             </tr>
 
 
@@ -36,7 +39,7 @@ export default function TablePage() {
                 <td>1/1/1995</td>
                 <td>150$</td>
                 <td>No</td>
-                <td><button className="btn btn-outline-dark btn-sm">DETAILS</button></td>
+                <td><Link to="placeorder"><button className="btn btn-outline-dark btn-sm">DETAILS</button></Link></td>
             </tr>
         </tbody>
         </Table>

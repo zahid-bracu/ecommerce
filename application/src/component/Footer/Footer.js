@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom d-flex justify-content-between align-items-center">
-                    <small className="text-secondary">Copyright &copy;  2020 Online Service </small>
+                    <small className="text-secondary">Copyright &copy;  2021 Online Service </small>
                     <ul className="list-inline">
                         <li className="list-inline-item ml-3"><a  >Privacy Policy.</a></li>
                         <li className="list-inline-item  ml-3"><a  >Terms of Use</a></li>

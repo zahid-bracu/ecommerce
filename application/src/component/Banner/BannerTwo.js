@@ -7,12 +7,17 @@ import shopping from '../../resource/images/shopping.png';
 import Fade from 'react-reveal/Fade';
 export default function BannerTwo() {
     return (
-        <Fade bottom>
+        
         <div className="container my-5">
             <div className="row justify-content-between align-items-center">
+            <Fade left>
             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                     <img src={shopping} className="shopping-image"/>
                 </div>
+                </Fade>
+
+
+                <Fade right>
                 <div className="col-lg-6 col-md-12 col-sm-12 col-12 ">
                  <div className="d-flex  justify-content-center align-items-center my-3 shop-card">
                         <img src={image12} className="icon-image d-block" alt="Image 12"/>
@@ -39,9 +44,10 @@ export default function BannerTwo() {
                     </div>
 
                 </div>
+                </Fade>
                 
             </div>
         </div>
-        </Fade>
+        
     )
 }

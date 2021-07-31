@@ -28,7 +28,7 @@ const ShopPage=React.memo(function({productList, product, loading, error}) {
     return (
         <>
         <div>
-          <h1 className="text-center">{product.length} products</h1> 
+          {/* <h1 className="text-center">{product.length} products</h1>  */}
           
           <div class="form-group custom-input-form">
           <label for="filterProduct" className="mb-2">
