@@ -7,6 +7,13 @@ Express
 mongoose
 JWT
 BcryptJS
-MongoDB Atlas
+MongoDB Atlas / Compass
 Heroku
 Paypal
+Stripe
+Google Cloud
+Socket.io
+Mailgun
+Google Chart
+AWS
+Postman
