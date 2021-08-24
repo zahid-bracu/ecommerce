@@ -1,25 +1,18 @@
 import React, {useState, useEffect} from 'react'
-import { connect } from 'react-redux';
-import {productList} from '../../redux/action/productsAction';
 import ItemCard from '../Item/ItemCard';
 import './style.css';
-const ShopPage=React.memo(function({productList, product, loading, error}) {
-  const [data,setData]=useState([]);
+import {datas} from '../../data/data.js'
+const ShopPage=React.memo(function() {
+  const [data,setData]=useState(datas);
 
-  useEffect(() => {
-    productList();
-    setData(product);
- },[]);
 
- 
- 
 
  const filterProductFunc=(event)=>{
    const value=event.target.value;
    if(value==='all'){
-     setData(product)
+     setData(datas)
    }else{
-    const tempData=product.filter(key=> key.category===value);
+    const tempData=datas.filter(key=> key.category===value);
     setData(tempData);
    }
  }
@@ -28,8 +21,8 @@ const ShopPage=React.memo(function({productList, product, loading, error}) {
     return (
         <>
         <div>
-          {/* <h1 className="text-center">{product.length} products</h1>  */}
           
+        
           <div class="form-group custom-input-form">
           <label for="filterProduct" className="mb-2">
             <h6>Filter Category</h6>
@@ -56,9 +49,7 @@ const ShopPage=React.memo(function({productList, product, loading, error}) {
                 })
             }
 
-            {
-              
-            }
+             
           </div>
           </div>
         </>
@@ -66,10 +57,6 @@ const ShopPage=React.memo(function({productList, product, loading, error}) {
 })
 
 
-const mapStateToProps=(state)=>({
-  loading:state.productReducer.loading,
-  product:state.productReducer.product,
-  error:state.productReducer.error
-})
+ 
 
-export default React.memo(connect(mapStateToProps,{productList})(ShopPage));
+export default React.memo(ShopPage);
